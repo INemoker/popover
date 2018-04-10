@@ -1,0 +1,43 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.wrapper{
+    height:100px;
+    margin-top:20%; 
+    display: flex;
+    align-items: center;
+}
+.clickMe{
+    margin-left:40%;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    outline: none;
+    margin-right: 10px;
+}
+.popover{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: none;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 10%;
+}
+.popover::before{
+    margin-right:-2px;
+    right: 100px;
+    top: 40%;
+    position: absolute;
+    content: "";
+    border: 10px solid;
+    border-color: transparent black transparent transparent;
+}
+.popover::after{
+    margin-right:-5px;
+    right: 100px;
+    top: 40%;
+    position: absolute;
+    content: "";
+    border: 10px solid;
+    border-color: transparent white transparent transparent;
+}

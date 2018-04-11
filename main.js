@@ -1,9 +1,10 @@
 $(clickMe).on('click',function(elm){
     elm.stopPropagation()
-    $(popover).toggle('show')
-    $(document).one('click',function(){
-    })
+    $(popover).toggle('active')
 })
 popover.addEventListener('click',(elm)=>{
     elm.stopPropagation()
+})
+$(document).on('click',function(){
+    $(popover).hide()
 })
